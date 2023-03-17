@@ -1,0 +1,29 @@
+{
+  "name": "cypressonlinestore",
+  "version": "1.0.0",
+  "description": "Cypress12, Cucumber, Gherkins",
+  "main": "index.js",
+  "scripts": {
+    "test": "cypress open"
+  },
+  "keywords": [
+    "QA",
+    "Automation"
+  ],
+  "author": "Renato Cabezas Antezana",
+  "license": "ISC",
+  "devDependencies": {
+    "@bahmutov/cypress-esbuild-preprocessor": "^2.2.0",
+    "cypress": "^12.8.1",
+    "esbuild": "^0.17.12"
+  },
+  "dependencies": {
+    "@badeball/cypress-cucumber-preprocessor": "^15.1.4"
+  },
+  "cypress-cucumber-preprocessor":{
+    "stepDefinitions": [
+      "cypress/e2e/step-definitions/*.{js, ts}"
+    ]
+  }
+  
+}
